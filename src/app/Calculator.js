@@ -39,7 +39,7 @@ export default class Calculator extends Component {
     });
   };
   render = () => (
-    <div className="page">
+    <div className="page calculator">
       <h1>在线计算器</h1>
       <div className="calc-pad">
         <div className="calc-display">{this.state.expression || 0}</div>
