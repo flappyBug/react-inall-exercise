@@ -2,13 +2,13 @@ import React from "react";
 
 import timerIcon from "../images/timer.png";
 import calculatorIcon from "../images/calculator.png";
-import Widget from "./Widget";
+import WidgetEntry from "./WidgetEntry";
 
 import "../styles/widget-list.less";
 const WidgetList = () => (
   <div class="widget-list">
-    <Widget name="计算器" icon={calculatorIcon} />
-    <Widget name="计时器" icon={timerIcon} />
+    <WidgetEntry name="计算器" icon={calculatorIcon} path="/calculator" />
+    <WidgetEntry name="计时器" icon={timerIcon} path="/timer" />
   </div>
 );
 

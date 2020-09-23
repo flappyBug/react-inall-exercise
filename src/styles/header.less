@@ -3,7 +3,6 @@
 header {
   background-color: @skyblue;
   z-index: 100;
-  color: white;
   padding: 20px;
   nav {
     margin-left: auto;
@@ -16,7 +15,14 @@ header {
       display: flex;
       list-style: none;
       li {
-        margin-left: 20px;
+        margin-left: 40px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
