@@ -1,0 +1,44 @@
+@import "./constants.less";
+.calc-pad {
+  display: grid;
+  padding: 60px;
+  background-color: #eaecff;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: @darkgray 1px solid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  row-gap: 20px;
+
+  .calc-display {
+    grid-column: 1 / span 3;
+    border: #c6c6c6 2px solid;
+    background-color: #fefefe;
+    padding: 20px;
+    color: @darkgray;
+    text-align: right;
+  }
+
+  div {
+    padding: 10px;
+    color: white;
+  }
+
+  .calc-op {
+    background-color: #fffe89;
+    color: @darkgray;
+  }
+
+  .calc-num {
+    background-color: #fbbf59;
+  }
+
+  .calc-clear {
+    background-color: #fec0fd;
+  }
+
+  .calc-eq {
+    background-color: #fd8184;
+  }
+}

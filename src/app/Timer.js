@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Timer = () => (
-  <div>
+  <div className="page">
     <h1>在线倒计时器</h1>
     <Link to="/">回到主页</Link>
   </div>
