@@ -1,4 +1,43 @@
 @import "./constants.less";
 .timer {
   background-color: @lightgray;
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .panel-set {
+    width: fit-content;
+    label {
+      display: block;
+      margin: 20px;
+      input {
+        margin-right: 20px;
+        padding: 10px;
+      }
+    }
+    button {
+      background-color: @skyblue;
+      width: 100%;
+      padding: 10px;
+      border-radius: 0;
+      border: none;
+      outline: none;
+      color: white;
+    }
+    button:disabled {
+      background-color: lightgray;
+    }
+  }
+
+  .panel-display {
+    flex-grow: 1;
+    padding: 40px;
+    margin: 40px;
+    color: gray;
+    font-size: 2.4rem;
+    font-weight: bold;
+    border: gray 4px solid;
+  }
 }
